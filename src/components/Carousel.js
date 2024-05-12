@@ -14,9 +14,10 @@ export default function Carousel() {
   return (
       <Swiper
         pagination={{
-          type: 'fraction',
+          clickable: true,
         }}
         navigation={true}
+        loop={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
