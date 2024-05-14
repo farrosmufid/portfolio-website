@@ -326,7 +326,23 @@ export default function Main() {
             </section>
             
             <section id="contact_me_section" className="tab--contact_me">
-                <h1>Contact Me</h1>
+                <div className="contact-me-container">
+                    <h1 className="contact-me-header">Get in Touch</h1>
+                    <div className="contact-me-right">
+                        <div className="contact-me-content">
+                            Are you in search of a dynamic professional skilled in Data Science, 
+                            Frontend Web Development, or Creative Data Visualization? 
+                            Whether you need a meticulous Data Analyst, an innovative Data Engineer, 
+                            or a proficient Frontend Web Developer who brings data-driven insights to user-friendly 
+                            interfaces, you have come to the right place. I am excited to explore opportunities 
+                            that allow me to leverage my technical expertise and creative problem-solving skills 
+                            to deliver outstanding results.
+                        </div>
+                        <div className="contact-me-button-wrapper">
+                            <a href="mailto:farrosmufid.ofid@gmail.com" className="mail-to-button">farrosmufid.ofid@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     )
