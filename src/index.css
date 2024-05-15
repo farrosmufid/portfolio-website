@@ -51,7 +51,7 @@ header > nav {
 nav {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.85rem;
   padding: 1.5rem 0rem;
 }
 
@@ -131,6 +131,8 @@ header a:hover {
 .timeline {
   list-style: none;
   padding: 2rem 0; 
+  max-height: 85vh;
+  overflow: scroll;
 }
 
 .timeline > li {
@@ -151,7 +153,7 @@ header a:hover {
   font-size: 0.9em;
   color: white;
   text-decoration: none;
-  position: absolute;
+  /* position: absolute; */
   right: 0;
 }
 
@@ -195,6 +197,7 @@ header a:hover {
   padding-left: 2rem;
   padding-right: 2rem;
   /* overflow: scroll; */
+  width: 100%;
 }
 
 .design_work_title {
@@ -249,14 +252,15 @@ dialog {
 .section_three--container {
   height: auto;
   margin: 0 auto;
-  padding: 0 10rem;
+  padding: 0 5rem;
+  width: 100%;
 }
 
 .content {
   /* background: red;
   border: 2px solid green; */
 
-  max-height: 65vh;
+  max-height: 45vh;
   overflow: scroll;
 }
 
@@ -278,9 +282,7 @@ dialog {
   font-weight: 600;
   line-height: 1.5;
   color: var(--primary-color);
-
   /* color: black; */
-
 }
 
 .paragraph {
@@ -305,12 +307,8 @@ dialog {
 
 .section_three--tab-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
   border-bottom: 1.3px solid #f1f1f1;
   transition: all 0.3s ease;
 }
@@ -323,9 +321,9 @@ dialog {
   font-weight: 600;
   line-height: 1.5;
   cursor: pointer;
-  width: 25%;
+  width: 100%;
   height: auto;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   border-bottom: 2.5px solid transparent;
   color: var(--secondary-color);
   background: var(--primary-color);
@@ -338,7 +336,7 @@ dialog {
   overflow: hidden;
   border-bottom: 2.5px solid var(--tertiary-color);
   color: var(--secondary-color);
-  background: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 .section_three--tab-bar {
@@ -362,7 +360,6 @@ dialog {
 
 .tab--awards {
   height: 100vh;
-  overflow: scroll;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -480,11 +477,8 @@ dialog {
   color: var(var(--secondary-color))
 }
 
-
-
-
-/* Media query for larger screens */
-@media only screen and (min-width: 700px) {
+/* Media query for screens larger than 800 */
+@media only screen and (min-width: 800px) {
   nav {
     font-size: 1.1rem;
   }
@@ -501,8 +495,8 @@ dialog {
   }
 }
 
-/* Media query for larger screens above 1200px */
-@media only screen and (min-width: 1200px) {
+/* Media query for screens larger than 1300px */
+@media only screen and (min-width: 1300px) {
   nav {
     font-size: 1.1rem;
   }
@@ -517,4 +511,32 @@ dialog {
     font-size: 10rem;
     width: 80vw;
   }
+
+  .section_three--tab-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1.3px solid #f1f1f1;
+    transition: all 0.3s ease;
+  }
+
+  .tab-menu-link.is-active {
+    background: var(--primary-color);
+  }
+
+  .content {
+    /* background: red;
+    border: 2px solid green; */
+  
+    max-height: 60vh;
+    overflow: scroll;
+  }
+  .tab-menu-link {
+    padding: 0.75rem 0;
+  }
+
 }
