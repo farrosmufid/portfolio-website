@@ -46,7 +46,7 @@ export default function Main() {
                             <p className="paragraph">Downloaded cleaned data is avalable in CSV format.</p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Update_Data.gif" alt="Update Data" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -65,16 +65,16 @@ export default function Main() {
                             <p className="paragraph">Top Trend filter, grouped by month year, based on various criteria.</p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/High_Level_Trends_1.gif" alt="High Level Trends 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
                         <div className="texts">
                             <h2 className="title">Line Charts of the Monthly Trend</h2>
-                            <p className="paragraph">Line charts of the monthly trend can be filtered by multiple groups.</p>
+                            <p className="paragraph">Line charts showing monthly trends can be filtered by multiple groups. Filtered charts can be downloaded in CSV format.</p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/High_Level_Trends_2.gif" alt="High Level Trends 2" width="426" height="265"/>
                         </div>
                     </div>
             </div>
@@ -88,13 +88,13 @@ export default function Main() {
                     <div className="content-container">
                         <div className="texts">
                             <h2 className="title">Filter and View Full Date Range</h2>
-                            <p className="paragraph">Top Trend filter, grouped by month year, based on various criteria.</p>
+                            <p className="paragraph">Click to filter for specific date ranges and easily reset to view the full date range.</p>
                             <h2 className="title">Filter for Multiple Categories</h2>
                             <p className="paragraph">Filter by one or more values for Order Generic, Medical Service, Ward, Doctor, and AMS Indication.</p>
                         </div>
                         
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Deep_dive_1.gif" alt="Deep Dive 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -108,7 +108,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Deep_dive_2.gif" alt="Deep Dive 2" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -122,7 +122,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Deep_dive_3.gif" alt="Deep Dive 3" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -135,7 +135,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Deep_dive_4.gif" alt="Deep Dive 4" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -144,11 +144,11 @@ export default function Main() {
                             <p className="paragraph">
                                 Use this bar chart to display the number of patients and their length of stay. 
                                 It includes a separate filter for convenience, featuring options like Order Generic, 
-                                AMS Indication, Frequency, and Dose.
+                                AMS Indication, Frequency, and Dose. The chart can be downloaded as a CSV file.
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Deep_dive_5.gif" alt="Deep Dive 5" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Forecast_1.gif" alt="Forecast 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -188,7 +188,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Forecast_2.gif" alt="Forecast 2" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Susceptibility_1.gif" alt="Susceptibility 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -225,12 +225,12 @@ export default function Main() {
                             the lowest susceptibility rates, adjusting dynamically based on any filters you apply, including specific medical services like General Medicine. 
                             Without filters, the charts show general trends across all data. Each bar details the antibiotic or organism name, susceptibility rate, 
                             and total tests or isolates. A colored dot indicates the general trend without filters, allowing for easy comparisons. For instance, 
-                            while Ampicillin’s overall susceptibility rate might be 46%, it drops to 29% under the General Medicine service, 
+                            while Ampicillin’s overall susceptibility rate might be 46%, it drops to 34% under the General Surgery nec, 
                             providing critical insights for informed decision-making.
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Susceptibility_2.gif" alt="Susceptibility 2" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -249,7 +249,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Susceptibility_3.gif" alt="Susceptibility 3" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -265,7 +265,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Susceptibility_4.gif" alt="Susceptibility 4" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -280,7 +280,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="https://via.placeholder.com/426x240" alt="Feature Image"/>
+                            <img src="/images/Susceptibility_5.gif" alt="Susceptibility 5" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
