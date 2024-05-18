@@ -222,7 +222,7 @@ export default function Main() {
                             </h2>
                             <p className="paragraph">
                             Explore antibiotic resistance trends with our dual horizontal bar charts. These charts highlight the top 10 antibiotics and organisms with 
-                            the lowest susceptibility rates, adjusting dynamically based on any filters you apply, including specific medical services like General Medicine. 
+                            the lowest susceptibility rates, adjusting dynamically based on any filters you apply, including specific medical services like General Surgery nec. 
                             Without filters, the charts show general trends across all data. Each bar details the antibiotic or organism name, susceptibility rate, 
                             and total tests or isolates. A colored dot indicates the general trend without filters, allowing for easy comparisons. For instance, 
                             while Ampicillin’s overall susceptibility rate might be 46%, it drops to 34% under the General Surgery nec, 
