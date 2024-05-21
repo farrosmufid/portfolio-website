@@ -3,6 +3,7 @@ import HomeHero from "./HomeHero";
 import MyTimeline from "./MyTimeline";
 import DesignWork from "./DesignWork";
 import Carousel from "./Carousel";
+import PdfViewer from "./PdfViewer";
 
 export default function Main() {
 
@@ -304,6 +305,12 @@ export default function Main() {
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
 
+    /* Functions for Awards section Modal Functionality */
+
+    const [isAwardsModalOpen, setIsAwardsModalOpen] = React.useState(false)
+
+    const openAwardsModal = () => setIsAwardsModalOpen(true);
+    const closeAwardsModal = () => setIsAwardsModalOpen(false);
 
     return (
         <main>
@@ -320,6 +327,158 @@ export default function Main() {
             
             <section id="awards_section" className="tab--awards">
                 <div className="awards-title">SUDATA Datathon 2023 - Best International Team</div>
+                <button className="design_work_button" onClick={openAwardsModal}>Task Given and Our Solution</button>
+                {
+                    isAwardsModalOpen && (
+                        <div
+                            className="modal-backdrop"
+                            onClick={(e) => e.target === e.currentTarget && closeAwardsModal()}
+                        >
+                            <dialog open>
+                                <div className="awards_modal_description">
+                                    <strong style={{display: 'block', 'font-size' :'1.25rem'}}>Task</strong>
+                                    <span>
+                                        My team and I, as data scientists, were enlisted by the Department of Agriculture,
+                                        Fisheries, and Forestry to provide advice. We were asked to identify and analyse
+                                        environmental, social, and governance issues affecting Australian agriculture.
+                                        Our goal was to reveal contemporary problems, challenge preconceptions, and 
+                                        propose solutions. 
+
+                                        Our task included:
+                                        <ul>
+                                            <li>
+                                                Identifying problems facing Australian agriculture.
+                                            </li>
+                                            <li>
+                                                Explaining the scope, severity, and impact of those problems.
+                                            </li>
+                                            <li>
+                                                Performing quantitative analyses to extract insights.
+                                            </li>
+                                            <li>
+                                                Drawing conclusions and providing recommendations to the Department.
+                                            </li>
+                                            <li>
+                                                Justifying our findings and recommendations with existing research.
+                                            </li>
+                                            <li>
+                                                Clearly communicating our solution and its potential impact on stakeholders.
+                                            </li>
+                                        </ul>
+                                        </span>
+                                        <strong style={{display: 'block', 'font-size' :'1.25rem'}}>Problems Identified</strong>
+                                        <span>
+                                            Analysing data from eight CSV files covering environmental, governance, and social issues,
+                                            including temperature anomalies, rainfall, water trades, water sources, economic factors,
+                                            and employment statistics from various periods, we identified significant problems with water usage
+                                            and unregulated water trades in Australia.
+
+                                            Given Australia's status as one of the driest continents, its agriculture heavily relies on irrigation.
+                                            Notably, rainfall has decreased by 10% over the last decade, leading to over-extraction of water,
+                                            ecological degradation, reduced river flows, and declining groundwater levels.
+
+                                            Unregulated water trades have created transparency issues and potential misuse by influential entities,
+                                            resulting in unfair water distribution and mistrust among users, particularly affecting small farmers.
+                                        </span>
+                                        <strong style={{display: 'block', 'font-size' :'1.25rem'}}>Data Cleaning and Transformations</strong>
+                                        <span>
+                                            <ul>
+                                                <li>
+                                                    Renamed column titles appropriately. 
+                                                </li>
+                                                <li>
+                                                    Selected relevant columns for analysis.
+                                                </li>
+                                                <li>
+                                                    Extracted year values for specific analyses.
+                                                </li>
+                                                <li>
+                                                    Converted dates into pandas datetime format.
+                                                </li>
+                                                <li>
+                                                    Replaced missing values with zero in the appropriate contexts for numerical columns.
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        <strong style={{display: 'block', 'font-size' :'1.25rem'}}>Explanatory Data Analysis (EDA) Graphs</strong>
+                                        <span>
+                                            <strong style={{display: 'block', 'font-size' :'1rem'}}>Water Shortage (Due to Climate Change Effects)</strong>
+                                            <ul>
+                                                <li>
+                                                    Line chart of short-term precipitation vs. crop production value.
+                                                </li>
+                                                <li>
+                                                    Bar chart of average annual rainfall from 2011 to 2021.
+                                                </li>
+                                                <li>
+                                                    Heat map of temperature anomalies and rainfall amounts by season across states.
+                                                </li>
+                                            </ul>
+                                        </span>     
+                                        <span>
+                                            <strong style={{display: 'block', 'font-size' :'1rem'}}>Water Shortage (Due to Overuse of Water)</strong>
+                                            <ul>
+                                                <li>
+                                                    Trends in water source and usage over the years.
+                                                </li>
+                                                <li>
+                                                    Top 10 water-consuming states in Australia from 2018 to 2020.
+                                                </li>
+                                            </ul>
+                                        </span> 
+                                        <span>
+                                            <strong style={{display: 'block', 'font-size' :'1rem'}}>Societal and Governmental - Unregulated Water Trades</strong>
+                                            <ul>
+                                                <li>
+                                                    Proportion of regulated vs. unregulated water trades from 2011 to 2021.
+                                                </li>
+                                                <li>
+                                                    Trends of water trades unregulated by origin and destination states.
+                                                </li>
+                                            </ul>
+                                        </span>    
+                                        <span>
+                                            <strong style={{display: 'block', 'font-size' :'1.25rem'}}>Solution (Recommendations to the Department of Agriculture, Fisheries, and Forestry)</strong>
+                                            <strong style={{display: 'block', 'font-size' :'1rem'}}>Problem 1 - Water Shortage and Overuse</strong>
+                                                <ul>
+                                                    <li>
+                                                        Implement efficient irrigation systems, such as drip irrigation, to reduce waste.
+                                                    </li>
+                                                    <li>
+                                                        Incentivise sustainable practices for farmers who adopt water-efficient methods.
+                                                    </li>
+                                                    <li>
+                                                        Engage local communities in water conservation initiatives.
+                                                    </li>
+                                                    <li>
+                                                        Utilise sensors to monitor and manage water extraction in real-time.
+                                                    </li>
+                                                </ul>
+                                               
+                                            <strong style={{display: 'block', 'font-size' :'1rem'}}>Problem 2 - Unregulated Water Trades</strong>
+                                                <ul>
+                                                    <li>
+                                                        Develop a centralised digital platform to record all water trades, enhancing transparency and
+                                                        data accessibility.
+                                                    </li>
+                                                    <li>
+                                                        Engage communities and stakeholders, including small farmers, to address concerns in water trade policies.
+                                                    </li>
+                                                    <li>
+                                                        Implement trading volume limits to prevent monopolisation and ensure fair distribution.
+                                                    </li>
+                                                </ul>
+
+                                        </span>                        
+                                </div>
+                                <br></br>
+                                <strong style={{display: 'block', 'font-size' :'1.25rem'}}>12-Minute Slide Deck</strong>
+                                <br></br>
+                                <PdfViewer/>
+                            </dialog>
+                        </div>
+                    )
+                }
                 <div className="carousel-container">
                     <Carousel/>
                 </div>
@@ -327,7 +486,12 @@ export default function Main() {
             
             <section id="contact_me_section" className="tab--contact_me">
                 <div className="contact-me-container">
-                    <h1 className="contact-me-header">Get in Touch</h1>
+                    <div className="contact-me-header">
+                        <h1 className="get-in-touch">Get in Touch</h1>
+                        <div className="tools-used">
+                            This website was built using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>
+                        </div>
+                    </div>
                     <div className="contact-me-right">
                         <div className="contact-me-content">
                             Are you in search of a dynamic professional skilled in Data Science, 
@@ -338,8 +502,16 @@ export default function Main() {
                             that allow me to leverage my technical expertise and creative problem-solving skills 
                             to deliver outstanding results.
                         </div>
-                        <div className="contact-me-button-wrapper">
-                            <a href="mailto:farrosmufid.ofid@gmail.com" className="mail-to-button">farrosmufid.ofid@gmail.com</a>
+                        <div className="contact-me-buttons">
+                            <div className="contact-me-button-wrapper">
+                                <a href="mailto:farrosmufid.ofid@gmail.com" className="mail-to-button">farrosmufid.ofid@gmail.com</a>
+                            </div>
+                            <div className="contact-me-button-wrapper">
+                                <a href="https://www.linkedin.com/in/farros-mufid" target="_blank" className="mail-to-button">LinkedIn</a>
+                            </div>
+                            <div className="contact-me-button-wrapper">
+                                <a href="https://github.com/farrosmufid" target="_blank" className="mail-to-button">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
