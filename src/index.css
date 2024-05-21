@@ -3,11 +3,10 @@ html {
 }
 
 html, body {
-  height: 100%; /* Ensures that the body takes full viewport height */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
 }
-
 
 * {
   box-sizing: border-box;
@@ -22,8 +21,8 @@ button {
 :root {
   --primary-color: #f1f1f1;  
   --secondary-color: #0a0a23;  
-  --tertiary-color: #0f0;  
-
+  --tertiary-color: #F9F871;  
+  --other-color: #0f0;
 }
 
 body {
@@ -200,6 +199,10 @@ header a:hover {
   width: 100%;
 }
 
+.design_work_header {
+  text-align: center;
+}
+
 .design_work_title {
   display: flex;
   flex-direction: column;
@@ -212,8 +215,9 @@ header a:hover {
   border-radius: 1.875rem;
   cursor: pointer;
   padding: 10px 22.5px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   letter-spacing: 1px;
+  margin: 0rem 0.1rem;
   /* border-bottom: 2.5px solid var(--tertiary-color); */
 }
 
@@ -254,7 +258,7 @@ dialog {
 .section_three--container {
   height: auto;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 2rem;
   width: 100%;
 }
 
@@ -363,32 +367,43 @@ dialog {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  /* gap: 2rem; */
+  align-items: center; 
   justify-content: center;
+  /* height: 100%; */
 
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding-top: 4rem; 
 }
 
 .awards-title {
   font-size: 1.25rem;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 2rem; 
+}
+
+.awards_modal_description {
+  line-height: 1.5;
+}
+
+.carousel-container {
+  margin-top: 1rem;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #ccc;
 }
 
 .swiper {
   width: 100%;
-  height: 100%; /* Adjust height as needed, or use 100% if it must be fully flexible */
   background: #eee;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color:red ;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
 .swiper-wrapper > .swiper-slide {
   text-align: center;
   display: flex;
@@ -398,12 +413,7 @@ dialog {
   background: #fff;
   font-size: 50px;
   width: 100%;
-  height: 100%; /* Ensure slides are full height of the swiper container */
-}
-
-.carousel-container {
-  width: 50%;
-  height: 50%;
+  height: 100%; 
 }
 
 /* .swiper-slide img {
@@ -412,6 +422,26 @@ dialog {
   height: 100%;
   object-fit: cover;
 } */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Maintain a 4:3 aspect ratio for the slide */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Contact Me Section */
 
@@ -435,9 +465,16 @@ dialog {
   flex: 1;
   background: var(--primary-color);
   display: flex;
+  flex-direction: column; 
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   color: var(--secondary-color);
+}
+
+.get-in-touch, .tools-used {
+  display: block;
+  text-align: center;
 }
 
 .contact-me-right {
@@ -445,8 +482,17 @@ dialog {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.3rem ;
-  gap: 1.5rem;
+  padding: 0.8rem ;
+  gap: 1rem;
+}
+
+.contact-me-buttons {
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid yellow; */
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-me-content {
@@ -466,10 +512,10 @@ dialog {
 }
 
 .contact-me-button-wrapper {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  justify-content: center;
-  padding: 1rem 0; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .mail-to-button:hover {
@@ -492,6 +538,34 @@ dialog {
     color: var(--primary-color);
     font-size: 6rem;
     width: 80vw;
+  }
+
+  .carousel-container {
+    width: 25rem;
+    height: 25rem;
+    /* border: 1px solid #ccc; */
+  }
+
+  .design_work_button {
+    font-size: 1rem;
+    margin: 0rem 0.5rem;
+    /* border-bottom: 2.5px solid var(--tertiary-color); */
+  }
+
+  .contact-me-buttons {
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid yellow; */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section_three--container {
+    height: auto;
+    margin: 0 auto;
+    padding: 0 5rem;
+    width: 100%;
   }
 }
 
@@ -535,8 +609,14 @@ dialog {
     max-height: 60vh;
     overflow: scroll;
   }
+
   .tab-menu-link {
     padding: 0.75rem 0;
   }
 
+  .carousel-container {
+    width: 35rem;
+    height: 35rem;
+    /* border: 1px solid #ccc; */
+  }
 }
