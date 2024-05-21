@@ -1,5 +1,9 @@
 import React from "react";
 
+function openGitHub() {
+    window.open('https://github.com/farrosmufid/Antimicrobial-Consumption-Dashboard-V4', '_blank')
+}
+
 export default function DesignWork({tabs, activeTab, handleClick, isModalOpen, openModal, closeModal}){
     return (
         <section id="design_work_section" className="tab--design_work">
@@ -7,6 +11,8 @@ export default function DesignWork({tabs, activeTab, handleClick, isModalOpen, o
                 <h1 className="design_work_header">Antimicrobial Consumption Dashboard</h1>
                 <div>
                     <button className="design_work_button" onClick={openModal}>Project Description</button>
+                    <button className="design_work_button" onClick={openGitHub}>GitHub Link</button>
+
                     {
                         isModalOpen && (
                             <div
@@ -15,6 +21,10 @@ export default function DesignWork({tabs, activeTab, handleClick, isModalOpen, o
                             >
                                 <dialog open>
                                     <h2>Project Title: Antimicrobial Consumption Dashboard</h2>
+                                    <br></br>
+                                    <div>
+                                        <strong>Tools Used:</strong> Python 3, Plotly Dash, Scikit-Learn, Pandas, Numpy, HTML, CSS, JavaScript, React JS, and Microsoft Excel.
+                                    </div>
                                     <div className="design_work_description">
                                         <div>
                                             <h3 style={{ display: "inline-block" }}>Abstract:{" "}</h3>
