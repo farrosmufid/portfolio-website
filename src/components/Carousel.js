@@ -6,30 +6,58 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, EffectCoverflow, Autoplay } from 'swiper/modules';
 
 export default function Carousel() {
   return (
       <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        speed={1000}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+
+        // navigation={true}
+
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        loop={true}
-        modules={[Pagination, Navigation]}
+        // pagination={true}
+        // navigation={true}
+        // loop={true}
+        // modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/sudata_pictures/Sudata_1.jpg"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/sudata_pictures/Sudata_2.jpg"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/sudata_pictures/Sudata_3.jpg"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/sudata_pictures/Sudata_4.jpg"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/images/sudata_pictures/Sudata_5.jpg"/>
+        </SwiperSlide>
       </Swiper>
   );
 }
