@@ -44,19 +44,19 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="/images/sudata_pictures/Sudata_1.jpg"/>
+          <img src="/images/sudata_pictures/Sudata_1.jpg" alt="Sudata 1"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/sudata_pictures/Sudata_2.jpg"/>
+          <img src="/images/sudata_pictures/Sudata_2.jpg" alt="Sudata 2"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/sudata_pictures/Sudata_3.jpg"/>
+          <img src="/images/sudata_pictures/Sudata_3.jpg" alt="Sudata 3"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/sudata_pictures/Sudata_4.jpg"/>
+          <img src="/images/sudata_pictures/Sudata_4.jpg" alt="Sudata 4"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/sudata_pictures/Sudata_5.jpg"/>
+          <img src="/images/sudata_pictures/Sudata_5.jpg" alt="Sudata 5"/>
         </SwiperSlide>
       </Swiper>
   );
