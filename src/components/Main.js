@@ -474,6 +474,10 @@ export default function Main() {
                                 <br></br>
                                 <strong style={{display: 'block', 'font-size' :'1.25rem'}}>12-Minute Slide Deck</strong>
                                 <br></br>
+                                <div className="download-link">
+                                    <a href="/files/Group_12_Presentation.pdf" download="Group_12_Presentation.pdf">Download Slide Deck</a>
+                                </div>
+                                <br></br>
                                 <PdfViewer/>
                             </dialog>
                         </div>
