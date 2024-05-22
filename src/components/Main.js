@@ -507,10 +507,10 @@ export default function Main() {
                                 <a href="mailto:farrosmufid.ofid@gmail.com" className="mail-to-button">farrosmufid.ofid@gmail.com</a>
                             </div>
                             <div className="contact-me-button-wrapper">
-                                <a href="https://www.linkedin.com/in/farros-mufid" target="_blank" className="mail-to-button">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/farros-mufid" target="_blank" rel="noopener noreferrer" className="mail-to-button">LinkedIn</a>
                             </div>
                             <div className="contact-me-button-wrapper">
-                                <a href="https://github.com/farrosmufid" target="_blank" className="mail-to-button">GitHub</a>
+                                <a href="https://github.com/farrosmufid" target="_blank" rel="noopener noreferrer" className="mail-to-button">GitHub</a>
                             </div>
                         </div>
                     </div>
