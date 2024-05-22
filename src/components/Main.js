@@ -47,7 +47,7 @@ export default function Main() {
                             <p className="paragraph">Downloaded cleaned data is avalable in CSV format.</p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Update_Data.gif" alt="Update Data" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Update_Data.gif" alt="Update Data" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function Main() {
                             <p className="paragraph">Top Trend filter, grouped by month year, based on various criteria.</p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/High_Level_Trends_1.gif" alt="High Level Trends 1" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/High_Level_Trends_1.gif" alt="High Level Trends 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -75,7 +75,7 @@ export default function Main() {
                             <p className="paragraph">Line charts showing monthly trends can be filtered by multiple groups. Filtered charts can be downloaded in CSV format.</p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/High_Level_Trends_2.gif" alt="High Level Trends 2" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/High_Level_Trends_2.gif" alt="High Level Trends 2" width="426" height="265"/>
                         </div>
                     </div>
             </div>
@@ -93,9 +93,8 @@ export default function Main() {
                             <h2 className="title">Filter for Multiple Categories</h2>
                             <p className="paragraph">Filter by one or more values for Order Generic, Medical Service, Ward, Doctor, and AMS Indication.</p>
                         </div>
-                        
                         <div className="image-container">
-                            <img src="/images/Deep_dive_1.gif" alt="Deep Dive 1" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Deep_dive_1.gif" alt="Deep Dive 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -109,7 +108,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Deep_dive_2.gif" alt="Deep Dive 2" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Deep_dive_2.gif" alt="Deep Dive 2" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -123,7 +122,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Deep_dive_3.gif" alt="Deep Dive 3" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Deep_dive_3.gif" alt="Deep Dive 3" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -136,7 +135,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Deep_dive_4.gif" alt="Deep Dive 4" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Deep_dive_4.gif" alt="Deep Dive 4" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -149,7 +148,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Deep_dive_5.gif" alt="Deep Dive 5" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Deep_dive_5.gif" alt="Deep Dive 5" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -174,7 +173,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Forecast_1.gif" alt="Forecast 1" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Forecast_1.gif" alt="Forecast 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -189,7 +188,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Forecast_2.gif" alt="Forecast 2" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Forecast_2.gif" alt="Forecast 2" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
@@ -213,7 +212,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Susceptibility_1.gif" alt="Susceptibility 1" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Susceptibility_1.gif" alt="Susceptibility 1" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -231,7 +230,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Susceptibility_2.gif" alt="Susceptibility 2" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Susceptibility_2.gif" alt="Susceptibility 2" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -250,7 +249,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Susceptibility_3.gif" alt="Susceptibility 3" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Susceptibility_3.gif" alt="Susceptibility 3" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -266,7 +265,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Susceptibility_4.gif" alt="Susceptibility 4" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Susceptibility_4.gif" alt="Susceptibility 4" width="426" height="265"/>
                         </div>
                     </div>
                     <div className="content-container">
@@ -281,7 +280,7 @@ export default function Main() {
                             </p>
                         </div>
                         <div className="image-container">
-                            <img src="/images/Susceptibility_5.gif" alt="Susceptibility 5" width="426" height="265"/>
+                            <img className="design-work-img" src="/images/Susceptibility_5.gif" alt="Susceptibility 5" width="426" height="265"/>
                         </div>
                     </div>
                 </div>
