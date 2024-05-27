@@ -60,7 +60,7 @@ export default function Navbar() {
                         <a href="#my_timeline_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>My Timeline</a>
                     </li>
                     <li>
-                        <a href="#design_work_section" className="nav-links" onClick={handleDropdownClick}>Showcase</a>
+                        <button className="nav-links" onClick={handleDropdownClick}>Showcase</button>
                         <ul className="navbar-dropdown">
                             <li>
                                 <a href="#design_work_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Design Work</a>
