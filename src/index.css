@@ -11,6 +11,7 @@ html, body {
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 button {
@@ -32,7 +33,7 @@ body {
 
 /* Header Section */
 
-header {
+/* header {
   background-color: transparent;
   color: var(--primary-color);
   padding: 0;
@@ -71,6 +72,128 @@ header a {
 header a:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color)
+} */
+
+header {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  font-size: 1rem;
+  /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
+  /* background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%); */
+  background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+.main-nav li {
+  text-align: center;
+}
+
+.nav--logo_text {
+  list-style-type: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 3rem;
+  padding-left: 0.5rem; 
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.2rem; 
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  padding: 10px 35px 16px 0px;
+}
+
+.active {
+  display: block;
+}
+
+.navbar-dropdown li {
+  list-style-type: none;
+}
+
+.navbar-dropdown li a{
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul li a:hover, nav ul li a:visited:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul.nav--logo_text li a {
+  background: none;
+}
+
+nav ul li a, nav ul li a:visited {
+  display: block;
+  line-height: 3rem;
+  color: #fff;
+  background: gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  text-decoration: none;
+}
+
+nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' \025BE';
+}
+
+/* Navbar toggle */
+
+#navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+
+#navbar-toggle span:before {
+  top: -10px;
+}
+
+#navbar-toggle span:after {
+  bottom: -10px;
+}
+
+#navbar-toggle.active span {
+  background-color: transparent;
+}
+
+#navbar-toggle.active span:before, #navbar-toggle.active span:after {
+  top: 0;
+}
+
+#navbar-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#navbar-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
 /* Home Hero Section */
@@ -454,7 +577,7 @@ iframe {
   height: 100vh;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding-top: 4rem; 
+  padding-top: 2rem; 
   display: flex;
   align-items: stretch;  
   width: 100%; 
@@ -509,7 +632,7 @@ iframe {
   border-radius: 1.875rem;
   cursor: pointer;
   padding: 10px 22.5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   background: var(--primary-color);
   text-decoration: none;
@@ -525,7 +648,7 @@ iframe {
 
 .mail-to-button:hover {
   background: var(--tertiary-color);
-  color: var(var(--secondary-color))
+  color: var(--secondary-color);
 }
 
 /* Media query for screens larger than 800 */
@@ -536,7 +659,48 @@ iframe {
 
   header a {
     letter-spacing: 1px;
-    padding: 1.5rem 1.5rem;
+    /* padding: 1.5rem 1.5rem; */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3.45rem;
+    align-items: center;
+  }
+   
+  .navbar-dropdown {
+     position: absolute;
+     display: block;
+     z-index: 100;
+     background: #262626;
+     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+     width: 100%;
+  }  
+  .main-nav li {
+    position: relative;
+  }
+  
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-links {
+    padding: 0rem 1.5rem;
+  }
+  
+  nav ul li ul li a {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    display: block;
+  }
+  
+  nav ul li ul li a:hover, nav ul li ul li a:visited:hover {
+    background: rgba(255, 255, 255, 0.3);;
+  }
+   .navbar-toggle {
+    display: none;
   }
 
   .home--hero_text_header {
