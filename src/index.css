@@ -99,6 +99,14 @@ header {
 
 .nav-links {
   text-decoration: none;
+  display: block;
+  background: none;
+  text-decoration: none;
+  border: none; 
+  padding: 0; 
+  cursor: pointer; 
+  text-align: center; 
+  font-size: 1rem;
 }
 
 .main-nav li {
@@ -137,7 +145,7 @@ header {
  color: rgba(255, 255, 255, 0.9);
 }
 
-nav ul li a:hover, nav ul li a:visited:hover {
+nav ul li a:hover, nav ul li a:visited:hover, nav ul li button.nav-links:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -145,15 +153,20 @@ nav ul.nav--logo_text li a {
   background: none;
 }
 
-nav ul li a, nav ul li a:visited {
+nav ul li a, nav ul li a:visited, nav ul li button.nav-links, nav ul li button:visited {
   display: block;
+  width: 100%;
   line-height: 3rem;
   color: #fff;
-  background: gradient(260deg, #2376ae 0%, #c16ecf 100%);
   text-decoration: none;
 }
 
 nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' \025BE';
+}
+
+nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-child):after {
   padding-left: 4px;
   content: ' \025BE';
 }
@@ -662,6 +675,10 @@ iframe {
     /* padding: 1.5rem 1.5rem; */
   }
 
+  header button {
+    letter-spacing: 1px;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -756,6 +773,10 @@ iframe {
   header a {
     letter-spacing: 1px;
     padding: 1.5rem 1.5rem;
+  }
+
+  header button {
+    letter-spacing: 1px;
   }
 
   .home--hero_text_header {
