@@ -492,7 +492,7 @@ export default function Main() {
                     <div className="contact-me-header">
                         <h1 className="get-in-touch">Get in Touch</h1>
                         <div className="tools-used">
-                            This website was built using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>
+                            This website is built using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>
                         </div>
                     </div>
                     <div className="contact-me-right">
