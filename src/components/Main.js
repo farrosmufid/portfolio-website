@@ -360,7 +360,7 @@ export default function Main() {
                                     </div>
                                 </a>
                             </div>
-                            <p>Try Braiv Lipsync for free!</p>
+                            <p>Try <strong>Braiv Lipsync</strong> for free!</p>
                             <div className="braiv-link-preview">
                                 <a href="https://www.braiv.co/products/braiv-lipsync" target="_blank" rel="noopener noreferrer" className="braiv-link-card">
                                     <div className="braiv-link-content">
