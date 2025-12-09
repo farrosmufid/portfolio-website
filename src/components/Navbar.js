@@ -57,6 +57,9 @@ export default function Navbar() {
                 </ul>
                 <ul className={`main-nav ${isNavActive ? 'active' : ''}`} id="js-menu">
                     <li>
+                        <a href="#key_skills_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Key Skills</a>
+                    </li>
+                    <li>
                         <a href="#my_timeline_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Professional Experience</a>
                     </li>
                     <li>

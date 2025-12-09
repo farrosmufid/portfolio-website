@@ -271,6 +271,41 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
 
 /* My Timeline Section */
 
+.tab--key_skills {
+  height: 100vh;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-skills-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.key-skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.key-skills-list li {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.key-skills-list li strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
 .tab--my_timeline {
   height: 100vh;
   background-color: var(--secondary-color);

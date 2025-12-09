@@ -314,6 +314,21 @@ export default function Main() {
     return (
         <main>
             <HomeHero roles={roles} currentIndex={currentIndex} />
+            <section id="key_skills_section" className="tab--key_skills">
+                <div className="key-skills-container">
+                    <ul className="key-skills-list">
+                        <li>
+                            <strong>AI/ML Pipeline Engineering:</strong> Experienced in architecting end-to-end pipelines for lipsync, translation, and thumbnail generation using Python, Next.js, and cloud-based ML inference services (Leonardo.ai, Gemini API) during my work experience at Braiv. Resolved timeout issues by migrating synchronous operations to asynchronous workflows using Firestore triggers for event-driven processing and Pub/Sub queues for background job execution, reducing pipeline runtime from 9 minutes to under 3 minutes.
+                        </li>
+                        <li>
+                            <strong>Cloud Infrastructure & DevOps:</strong> Built and maintained multi-environment deployment infrastructure on Google Cloud using Cloud Run and Artifact Registry, automated CI/CD with GitHub Actions, implemented structured logging and tracing for observability, and created standardized API layers for AI service integrations, improving deployment reliability and developer productivity during my work experience at Braiv.
+                        </li>
+                        <li>
+                            <strong>Data Engineering:</strong> Strong understanding of the data engineering process, including data cleaning and ETL. Skilled in writing SQL queries and utilising SAP Data Services functions to migrate eight of Telkomsel's fund management financial data objects from Oracle ERP to SAP S/4 HANA ensuring timely data extraction aligned with functional team specifications during my internship at Accenture Indonesia.
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <MyTimeline/>
             <DesignWork 
                 tabs={tabs} 
