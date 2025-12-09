@@ -57,13 +57,13 @@ export default function Navbar() {
                 </ul>
                 <ul className={`main-nav ${isNavActive ? 'active' : ''}`} id="js-menu">
                     <li>
-                        <a href="#my_timeline_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>My Timeline</a>
+                        <a href="#my_timeline_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Professional Experience</a>
                     </li>
                     <li>
                         <button className="nav-links" onClick={handleDropdownClick}>Showcase</button>
                         <ul className="navbar-dropdown">
                             <li>
-                                <a href="#design_work_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Design Work</a>
+                                <a href="#design_work_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Capstone Work</a>
                             </li>
                             <li>
                                 <a href="#awards_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Awards</a>

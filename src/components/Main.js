@@ -10,10 +10,10 @@ export default function Main() {
     /* Functions for HomeHero section */
 
     const roles = [
-        "Front End Developer",
-        "Data Scientist",
-        "Creative",
-        "Data Analyst",
+        "Software Engineer",
+        "AI/ML Pipeline Engineer",
+        "Cloud & DevOps Engineer",
+        "Frontend Developer",
         "Data Engineer",
         "USYD Alumni"    
     ]
@@ -490,20 +490,14 @@ export default function Main() {
             <section id="contact_me_section" className="tab--contact_me">
                 <div className="contact-me-container">
                     <div className="contact-me-header">
-                        <h1 className="get-in-touch">Get in Touch</h1>
+                        <h1 className="get-in-touch">My Tech Stack</h1>
                         <div className="tools-used">
-                            This website is built using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React</strong>
+                            Next.JS, React, TypeScript, Python, React-Bootstrap, HTML, CSS, JavaScript
                         </div>
                     </div>
                     <div className="contact-me-right">
                         <div className="contact-me-content">
-                            Are you in search of a dynamic professional skilled in Data Science, 
-                            Frontend Web Development, or Creative Data Visualization? 
-                            Whether you need a meticulous Data Analyst, an innovative Data Engineer, 
-                            or a proficient Frontend Web Developer who brings data-driven insights to user-friendly 
-                            interfaces, you have come to the right place. I am excited to explore opportunities 
-                            that allow me to leverage my technical expertise and creative problem-solving skills 
-                            to deliver outstanding results.
+                            Contact Me
                         </div>
                         <div className="contact-me-buttons">
                             <div className="contact-me-button-wrapper">

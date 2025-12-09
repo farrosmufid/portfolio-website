@@ -276,20 +276,36 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
   padding-left: 2em;
 }
 
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
 .timeline-title {
   font-weight: bold;
   text-decoration: none;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.4em;
   display: inline-block;
+  flex-grow: 1;
 }
 
 .timeline-date {
-  font-size: 0.9em;
+  font-size: 1.1em;
+  font-weight: bold;
   color: white;
   text-decoration: none;
-  /* position: absolute; */
-  right: 0;
+  margin-left: auto;
+}
+
+.timeline-logo {
+  display: inline-block;
+  max-width: 200px;
+  max-height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .right-aligned {
@@ -613,9 +629,18 @@ iframe {
   color: var(--secondary-color);
 }
 
-.get-in-touch, .tools-used {
-  display: block;
+.get-in-touch {
   text-align: center;
+  line-height: 4rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.tools-used {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: bold;
 }
 
 .contact-me-right {
@@ -637,8 +662,10 @@ iframe {
 }
 
 .contact-me-content {
-  text-align: justify;
-  line-height: 1.5rem;
+  text-align: center;
+  line-height: 5rem;
+  font-weight: bold;
+  font-size: 5rem;
 }
 
 .mail-to-button {
@@ -693,6 +720,9 @@ iframe {
      background: #262626;
      box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
      width: 100%;
+     min-width: 180px;
+     left: 50%;
+     transform: translateX(-50%);
   }  
   .main-nav li {
     position: relative;
@@ -705,6 +735,10 @@ iframe {
   
   .nav-links {
     padding: 0rem 1.5rem;
+  }
+  
+  .main-nav li button.nav-links {
+    min-width: 180px;
   }
   
   nav ul li ul li a {

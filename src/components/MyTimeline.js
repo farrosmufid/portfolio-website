@@ -6,53 +6,50 @@ export default function MyTimeline() {
             <div className="section_two--container">
                 <div className="section_two--row">
                     <div className="col-6 centered">
-                        <h4 className="timeline-text">My Timeline</h4>
+                        <h4 className="timeline-text">Professional Experience</h4>
                         <ul className="timeline">
                             <li>
-                                <a className="timeline-title" href="#my_timeline_section">Started Studying Electrical Engineering</a>
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">Aug 2015</a>
-                                <p>Started studying for a Bachelor of Electrical Engineering at the University of Indonesia, 
-                                    where I took courses such as Introduction to Programming, Statistics, Numerical Computations, 
-                                    Signals and Systems, Electronic Circuits, and many more. I continued my studies for a Bachelor of Electrical Engineering
-                                    in July 2017 at the University of Sydney, where I took courses such as Computer Architecture, Thesis A, and Thesis B.
-                                </p>
+                                <div className="timeline-header">
+                                    <img src="/images/logos/braiv_logo.jpg" alt="Braiv Logo" className="timeline-logo" />
+                                    <a className="timeline-title" href="#my_timeline_section">Software Engineer @ Braiv (Sydney, Australia)</a>
+                                    <a className="timeline-date right-aligned" href="#my_timeline_section">April 2025 - December 2025</a>
+                                </div>
+                                <p>• Building end-to-end AI/ML media generation pipelines (lipsync, translation, thumbnails).</p>
+                                <p>• Building event-driven asynchronous task pipelines using Firestore writes to trigger automatic workflows, webhook handlers to process external callbacks, Cloud Functions to orchestrate multi-step AI pipelines (thumbnails, lipsync), and Pub/Sub queues to allow background job execution without blocking user requests.</p>
+                                <p>• Integrating multiple AI services (OpenAI, Gemini, Leonardo.ai, etc.) into modular Cloud Functions with error handling, retry logic, and webhook-based async processing, ensuring reliable processing across different AI providers.</p>
+                                <p>• Implementing consistent authentication and error handling patterns across multiple AI service integrations (OpenAI, Gemini, Leonardo.ai) using centralized secret management and standardized error responses.</p>
+                                <p>• Managing multi-environment deployments (dev/prod) using Docker multi-architecture builds and Google Cloud Artifact Registry for container image storage and distribution.</p>
+                                <p>• Setting up GitHub Action workflows to automate builds and deployment triggers.</p>
+                                <p>• Managing environment variables and secrets using GCP Secret Manager.</p>
+                                <p>• Adding structured logging tracing, and async error reporting to improve debugging clarity in the development environment.</p>
+                                <p>• Building frontend UI/UX with React, TypeScript, and React-Bootstrap.</p>
                             </li>
                             <li>
-                                <a className="timeline-title" href="#my_timeline_section">ETL Data Engineer Internship at Accenture</a>
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">Jan 2020 - Feb 2020</a>
-                                <p>I helped with Telkomsel's three-year Data Migration project (2017-2020),
-                                    transitioning from Oracle ERP to SAP S/4 HANA by developing 
-                                    SQL queries and data service functions for eight fund management data objects, 
-                                    ensuring smooth data extraction in line with the functional team's specifications.</p>
+                                <div className="timeline-header">
+                                    <img src="/images/logos/jaycar_logo.svg" alt="Jaycar Logo" className="timeline-logo" />
+                                    <a className="timeline-title" href="#my_timeline_section">Retail Sales Assistant @ Jaycar Electronics (Sydney, Australia)</a>
+                                    <a className="timeline-date right-aligned" href="#my_timeline_section">April 2025 - Present</a>
+                                </div>
+                                <p>• Providing customers with guidance on electronics, networking hardware, and components based on their needs.</p>
+                                <p>• Improving in-store product organisation for a clean and well-structured layout.</p>
+                                <p>• Handling click-and-collect orders and returns as part of daily store operations.</p>
+                                <p>• Performing retail sales and operating POS systems to process customer transactions.</p>
                             </li>
                             <li>
-                                <a className="timeline-title" href="#my_timeline_section">Graduated 🎉</a>
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">May 2020</a>
-                                <p>I graduated a Bachelor of Engineering Honours Degree in Electrical Engineering.
-                                </p>
-                            </li>
-                            <li>
-                                <a className="timeline-title" href="#my_timeline_section">Started Studying for a Graduate Diploma and Progressed to a Master of IT</a>
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">March 2021</a>
-                                <p>I continued studying Computer Science and IT to broaden my knowledge in Software Engineering, 
-                                    UI/UX Design, Data Science, and Data Analytics.
-                                </p>
-                            </li>
-                            <li>
-                                <a className="timeline-title" href="#my_timeline_section">Software Developer at Westmead Hospital (IT Capstone Project)</a> 
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">Aug 2023 - Nov 2023</a>
-                                <p>I completed a capstone project focused on developing an interactive dashboard web application with Plotly Dash, 
-                                    designed to monitor antibiotic resistance among Westmead Hospital patients. 
-                                    In this project, I took on multiple roles, including that of a Front End Developer, 
-                                    Data Analyst, and Data Scientist. As a Data Scientist, I used linear regression with time series 
-                                    to forecast trends in Drug-Associated Susceptibility Changes (DASC) for various antibiotics.
-                                    As a Front End Developer, I iterated the front-end UI design four times to enhance the UX based on the client's functional criteria.
-                                    The client was satisfied with the results, achieving an HD grade.</p>
-                            </li>
-                            <li>
-                                <a className="timeline-title" href="#my_timeline_section">Graduated with a Master of IT 🎉</a>
-                                <a className="timeline-date right-aligned" href="#my_timeline_section">May 2024</a>
-                                <p>I graduated a Master of IT at USYD, majoring in Data Management and Analytics.</p>
+                                <div className="timeline-header">
+                                    <img src="/images/logos/accenture_logo.png" alt="Accenture Logo" className="timeline-logo" />
+                                    <a className="timeline-title" href="#my_timeline_section">ETL Data Engineer Internship @ Accenture (Jakarta, Indonesia)</a> 
+                                    <a className="timeline-date right-aligned" href="#my_timeline_section">January 2020 - February 2020</a>
+                                </div>
+                                <p>• Handling eight data objects in fund management, focusing on executing and troubleshooting SAP Data Services for Extract, Transform, and Load (ETL) operations.</p>
+                                <p>• Developing and executing SQL scripts and data transformation blocks (Pivot, Reverse Pivot) in SAP Data Services to facilitate data extraction, transformation, validation, and loading to ensure a smooth data migration process.</p>
+                                <p>• Debugging SAP Data Services workflows when anomalies occurred during ETL operations. .</p>
+                                <p>• Writing extraction logic based on functional team specifications.</p>
+                                <p>• Updating source files and executing pre-load and post-load validation for all assigned data objects.</p>
+                                <p>• Generating ATL files to document the final working code at the end of the data migration to ensure system maintainability and future traceability.</p>
+                                <p>• Modelling ARIS Architect & Designer logic according to changes specified by the functional team, maintaining accurate documentation.</p>
+                                <p>• Assisting in risk management assessments by identifying potential data discrepancies and mitigating data migration risks in coordination with the functional team.</p>
+                                <p>• Resolving critical data mismatches and anomalies during the Go-Live phase, preventing disruptions in the data migration process, and ensuring data accuracy.</p>
                             </li>
                         </ul>
                     </div>

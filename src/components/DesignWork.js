@@ -9,6 +9,7 @@ export default function DesignWork({tabs, activeTab, handleClick, isModalOpen, o
         <section id="design_work_section" className="tab--design_work">
             <div className="design_work_title">
                 <h1 className="design_work_header">Antimicrobial Consumption Dashboard</h1>
+                <h2>(Capstone Project with Westmead Hospital)</h2>
                 <div>
                     <button className="design_work_button" onClick={openModal}>Project Description</button>
                     <button className="design_work_button" onClick={openGitHub}>GitHub Link</button>
