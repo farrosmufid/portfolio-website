@@ -66,6 +66,9 @@ export default function Navbar() {
                         <button className="nav-links" onClick={handleDropdownClick}>Showcase</button>
                         <ul className="navbar-dropdown">
                             <li>
+                                <a href="#braiv_innovation_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Braiv Innovation</a>
+                            </li>
+                            <li>
                                 <a href="#design_work_section" className="nav-links" onClick={(e) => handleLinkClick(e, false)}>Capstone Work</a>
                             </li>
                             <li>

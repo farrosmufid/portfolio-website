@@ -413,6 +413,185 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
 
 /* Design Work Section */
 
+.tab--braiv_innovation {
+  height: 100vh;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.braiv-innovation-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem 2rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.braiv-innovation-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.braiv-innovation-header {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.braiv-innovation-intro {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.braiv-product-section {
+  margin-bottom: 1rem;
+}
+
+.braiv-product-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: var(--primary-color);
+}
+
+.braiv-product-description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.braiv-video-container {
+  margin: 0.75rem 0;
+  display: inline-block;
+  position: relative;
+}
+
+.braiv-video-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.braiv-video-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.braiv-video-thumbnail {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+}
+
+.braiv-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.braiv-video-link:hover .braiv-video-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.braiv-play-icon {
+  width: 80px;
+  height: 80px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.braiv-video-link:hover .braiv-play-icon {
+  opacity: 1;
+}
+
+.braiv-product-section p:not(.braiv-product-description) {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.braiv-link-preview {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.braiv-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  max-width: 500px;
+  width: 100%;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.braiv-link-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.braiv-link-content {
+  flex: 1;
+}
+
+.braiv-link-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.braiv-link-url {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: var(--primary-color);
+}
+
+.braiv-link-arrow {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.braiv-link-card:hover .braiv-link-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
 .tab--design_work {
   height: 100vh;
   background-color: var(--secondary-color);

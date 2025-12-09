@@ -330,6 +330,59 @@ export default function Main() {
                 </div>
             </section>
             <MyTimeline/>
+            <section id="braiv_innovation_section" className="tab--braiv_innovation">
+                <div className="braiv-innovation-container">
+                    <div className="braiv-innovation-content">
+                        <h1 className="braiv-innovation-header">
+                            Braiv Innovation
+                        </h1>
+                        <p className="braiv-innovation-intro">
+                            The Braiv Innovation Project features <strong>Braiv Lipsync</strong>, <strong>Braiv Thumbnails</strong>, and <strong>Braiv Live</strong>. <strong>Braiv Live</strong> is an experimental real-time translation feature, and <strong>Braiv Thumbnails</strong> is currently in development.
+                        </p>
+                        
+                        <div className="braiv-product-section">
+                            <h3 className="braiv-product-title">Braiv Lipsync</h3>
+                            <p className="braiv-product-description">
+                                Add realistic AI lip synchronization to your dubbed videos, leveraging one of our affordable or premium options.
+                            </p>
+                            
+                            <div className="braiv-video-container">
+                                <a href="https://www.youtube.com/watch?v=xtpmqP9gdfQ" target="_blank" rel="noopener noreferrer" className="braiv-video-link">
+                                    <img 
+                                        src="https://img.youtube.com/vi/xtpmqP9gdfQ/maxresdefault.jpg" 
+                                        alt="Braiv Lipsync Video" 
+                                        className="braiv-video-thumbnail"
+                                    />
+                                    <div className="braiv-video-overlay">
+                                        <svg className="braiv-play-icon" viewBox="0 0 24 24" fill="white">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <p>Try Braiv Lipsync for free!</p>
+                            <div className="braiv-link-preview">
+                                <a href="https://www.braiv.co/products/braiv-lipsync" target="_blank" rel="noopener noreferrer" className="braiv-link-card">
+                                    <div className="braiv-link-content">
+                                        <div className="braiv-link-title">Braiv Lipsync</div>
+                                        <div className="braiv-link-url">braiv.co/products/braiv-lipsync</div>
+                                    </div>
+                                    <svg className="braiv-link-arrow" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div className="braiv-product-section">
+                            <h3 className="braiv-product-title">Braiv Thumbnails</h3>
+                            <p className="braiv-product-description">
+                                Coming soon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <DesignWork 
                 tabs={tabs} 
                 activeTab={activeTab} 
