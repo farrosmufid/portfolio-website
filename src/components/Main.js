@@ -558,7 +558,7 @@ export default function Main() {
             <section id="contact_me_section" className="tab--contact_me">
                 <div className="contact-me-container">
                     <div className="contact-me-header">
-                        <h1 className="get-in-touch">My Tech Stack/Skils</h1>
+                        <h1 className="get-in-touch">My Tech Stack/Skills</h1>
                         <div className="tools-used">
                             Artifact Registry, Cloud Functions, Cloud Run, CSS, Docker, Excel, Firestore, Gemini API, GitHub Actions, GCP Secret Manager, HTML, JavaScript, Leonardo.ai, Next.js, Numpy, OpenAI, Oracle ERP, Pandas, Plotly Dash, Pub/Sub, Python, React, React-Bootstrap, SAP Data Services, SAP S/4 HANA, Scikit-Learn, SQL, TypeScript.
                         </div>
