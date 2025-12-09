@@ -454,12 +454,12 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
   width: 100%;
   max-width: 1000px;
   padding: 1rem 2rem;
-  max-height: calc(100vh - 2rem);
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -467,8 +467,10 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .braiv-innovation-header {
@@ -1145,13 +1147,30 @@ iframe {
 
   .braiv-innovation-container {
     padding: 0.5rem 1rem;
-    max-height: calc(100vh - 3rem);
+    max-height: 100vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
   }
 
   .tab--braiv_innovation {
     overflow: hidden;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .braiv-innovation-content {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .braiv-product-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .braiv-product-description {
+    display: block;
+    visibility: visible;
   }
 
   .key-skills-container {
