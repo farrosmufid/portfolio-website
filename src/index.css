@@ -456,6 +456,8 @@ nav ul li button:not(:only-child):after, nav ul li button:visited:not(:only-chil
   padding: 1rem 2rem;
   max-height: calc(100vh - 2rem);
   overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1143,6 +1145,13 @@ iframe {
 
   .braiv-innovation-container {
     padding: 0.5rem 1rem;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab--braiv_innovation {
+    overflow: hidden;
   }
 
   .key-skills-container {
